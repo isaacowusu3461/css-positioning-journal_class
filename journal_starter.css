@@ -6,6 +6,7 @@
    Complete the TODOs below to style the journal.
    Refer to instructions for detailed guidance.
    
+   Author: Cassie Nguyen
    Author: Isaac Owusu
    Date: 02/02/2026
 ============================================ */
@@ -14,7 +15,7 @@
    STEP 1: BASE RESET & TYPOGRAPHY
    ============================================ */
 
-   * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,9 +51,10 @@ body {
    background color, and text alignment
 ============================================ */
 
-#header-box {
-    /* YOUR CODE HERE */
-    
+header-box {
+    header{padding: 40px;}
+    text-align: center;
+    background-color: red;
 }
 
 /* ============================================
@@ -62,13 +64,15 @@ body {
    and content area (75%)
 ============================================ */
 
-#sidebar {
-    /* YOUR CODE HERE */
+sidebar {
+    float: right;
+    width: 25%;
     
 }
 
-#content-area {
-    /* YOUR CODE HERE */
+content-area {
+    float: left;
+    width: 75%;
     
 }
 
