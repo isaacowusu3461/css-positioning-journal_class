@@ -7,6 +7,7 @@
    Refer to instructions for detailed guidance.
    
    Author: Cassie Nguyen
+   Author: Isaac Owusu
    Date: 02/02/2026
 ============================================ */
 
@@ -38,13 +39,9 @@ body {
    - Add padding and border radius
 ============================================ */
 
-main-container {
-
-        background-color:white;
-        max-width:  960px; 
-        margin: auto;
-        border: 30px black;
-       
+#main-container {
+    /* YOUR CODE HERE */
+    
 }
 
 /* ============================================
@@ -87,6 +84,9 @@ content-area {
 
 #main-container::after {
     /* YOUR CODE HERE */
+    content: "";
+    display: table;
+    clear: both;
     
 }
 
@@ -98,12 +98,27 @@ content-area {
 
 .journal-entry {
     /* YOUR CODE HERE */
+    background-color: #eaf4ff;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
     
 }
 
 .entry-image {
     /* YOUR CODE HERE */
     /* Add picture frame effect */
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+    outline: 2px solid #555;
+    padding: 3px;
+    border-radius: 6px;
     
 }
 
@@ -115,5 +130,24 @@ content-area {
 
 @media (max-width: 768px) {
     /* YOUR CODE HERE */
+    #sidebar {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #content-area {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .entry-image {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 15px auto;
+    }
     
 }
