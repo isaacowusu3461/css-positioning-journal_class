@@ -41,7 +41,10 @@ body {
 
 #main-container {
     /* YOUR CODE HERE */
-    
+    background-color:white;
+    max-width:  960px; 
+    margin: auto;
+    border: 30px black;
 }
 
 /* ============================================
